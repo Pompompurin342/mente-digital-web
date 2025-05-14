@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #fffdee;
+  color: #443311;
+  line-height: 1.6;
+}
+
+header {
+  background: #fcd34d;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #5c3d00;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 150px;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.bar {
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.fill {
+  background: #fbbf24;
+  height: 100%;
+  width: 0;
+  transition: width 1s ease;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #fcd34d;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: #fcd34d;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

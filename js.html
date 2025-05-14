@@ -1,0 +1,20 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const fills = document.querySelectorAll(".fill");
+
+  const animateBars = () => {
+    fills.forEach(fill => {
+      const percent = fill.getAttribute("data-percent");
+      fill.style.width = percent;
+    });
+  };
+
+  // Activar cuando el usuario hace scroll cerca de "skills"
+  const skillsSection = document.getElementById("skills");
+  window.addEventListener("scroll", () => {
+    const sectionTop = skillsSection.getBoundingClientRect().top;
+    const trigger = window.innerHeight - 100;
+    if (sectionTop < trigger) {
+      animateBars();
+    }
+  });
+});

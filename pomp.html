@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pompompurin - Mente Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      background: #fffbea;
+      color: #4e342e;
+    }
+    header {
+      background: #ffe082;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5d4037;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .skills-bar {
+      background: #ffe0b2;
+      height: 20px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .skills-bar-fill {
+      height: 100%;
+      background: #ffb74d;
+      width: 0;
+    }
+    footer {
+      background: #ffe082;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pompompurin</h1>
+    <nav>
+      <a href="#about">Sobre él</a>
+      <a href="#gallery">Galería</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>¿Quién es Pompompurin?</h2>
+    <p>Pompompurin es un adorable perrito Golden Retriever creado por Sanrio. Le encanta llevar su boina marrón y tomar siestas. Es amable, amigable y siempre está dispuesto a ayudar a sus amigos.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Galería</h2>
+    <div class="gallery" style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="https://cdn.sanrio.com/uploads/2021/07/0726_pompompurin_top.jpg" alt="Pompompurin">
+      <img src="https://cdn.sanrio.com/uploads/2021/07/0726_pompompurin_02.jpg" alt="Pompompurin con amigos">
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades de Pompompurin</h2>
+    <p>Dormir:</p>
+    <div class="skills-bar"><div class="skills-bar-fill" style="width: 95%;"></div></div>
+    <p>Hacer sonreír a los demás:</p>
+    <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%;"></div></div>
+    <p>Comer pudín:</p>
+    <div class="skills-bar"><div class="skills-bar-fill" style="width: 100%;"></div></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>¿Quieres enviarle un mensaje a Pompompurin? Llena este formulario ficticio:</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" style="display:block;width:100%;margin:10px 0;padding:10px;">
+      <input type="email" placeholder="Tu correo" style="display:block;width:100%;margin:10px 0;padding:10px;">
+      <textarea placeholder="Tu mensaje" style="display:block;width:100%;margin:10px 0;padding:10px;"></textarea>
+      <button type="submit" style="padding:10px 20px;background:#ffb74d;border:none;color:white;border-radius:5px;">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mente Digital - Proyecto Pompompurin</p>
+    <p>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </p>
+  </footer>
+</body>
+</html>
